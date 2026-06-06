@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Header and Footer</title>
+
+  <style>
+    /* HEADER STYLES */
+    header {
+      background-color: #1a2e4a;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1em;
+      color: #ffffff;
+    }
+/* HYPERLINK STYLES */
+a {
+  color: #1a2e4a;
+  text-decoration: underline;
+}
+
+/* HOVER EFFECT - when mouse moves over link */
+a:hover {
+  color: #ffffff;
+  background-color: #1a2e4a;
+  text-decoration: none;
+}
+
+/* FOCUS EFFECT - when link is selected by keyboard */
+a:focus {
+  color: #ffffff;
+  background-color: #1a2e4a;
+  outline: 2px solid navy;
+  text-decoration: none;
+}
+
+/* SKIP NAVIGATION LINK */
+.skip-nav {
+  background-color: #1a2e4a;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  display: block;
+  text-align: left;
+}
+
+.skip-nav:hover {
+  background-color: #ffffff;
+  color: #1a2e4a;
+  outline: 2px solid navy;
+}
+
+.skip-nav:focus {
+  background-color: #ffffff;
+  color: #1a2e4a;
+  outline: 2px solid navy;
+}
+
+    /* NAVIGATION STYLES */
+    nav {
+      background-color: #ffffff;
+      text-align: left;
+      padding: 40px 20px;
+      justify-content: space-evenly;
+    }
+    nav a {
+      color: #1a2e4a;
+      text-decoration: none;
+      margin: 0 40px;
+      font-size: 1em;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #add8e6;
+    }
+
+    /* MAIN CONTENT STYLES */
+    main {
+      padding: 20px;
+      min-height: 300px;
+      background-color: #F2F0EB;
+      text-align: center;
+      font-size: 1em;
+      font-family: 'Calibri', Helvetica;
+      display: block;
+     }
+
+    /* PARAGRAPH FONT STYLE */
+    .font-paragraph {
+      font-family: Georgia, 'Arial', serif;
+      text-align: left;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    ol {
+      text-align: left;
+      list-style-position: inside;
+    }
+
+    /* FOOTER STYLES */
+    footer {
+      background-color: #1a2e4a;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+
+<body>
+ <!-- SKIP NAVIGATION LINK -->
+  <a href="#main-content" class="skip-nav">Skip to Main Content</a>
+
+  <header>
+    <h1>MOD 3 WEB PAGE DESIGN</h1>
+    <p>S. Anne Audet</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+<main id="main-content">
+
+<!-- IMAGE LEFT + HEADING/TEXT RIGHT -->
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+
+  <!-- LEFT: Both images stacked -->
+  <div style="flex: 1; min-width: 0; text-align: left;">
+
+    <img src="team.jpg."
+         alt="Silhouettes of a corporate management team overlaid against a modern city skyline."
+         style="display: block; max-width: 100%; height: auto;">
+
+    <!-- IMAGE DESCRIPTION BELOW FIRST IMAGE -->
+    <div
+      class="long-desc"
+      id="chart-long-desc"
+      role="note"
+      aria-label="Long description for Figure 1"
+      style="margin-top: 10px; width: 100%;">
+      <p>Silhouettes of a corporate management team overlaid against a modern city skyline.</p>
+    </div>
+
+    <!-- SECOND IMAGE STACKED BELOW -->
+    <img src="wchoices.jpg."
+         alt="2023 Editors' picks, best new products."
+         style="display: block; max-width: 100%; height: auto; margin-top: 20px;">
+
+    <p style="width: 100%; margin-top: 8px; font-size: 0.9em; color: #333;">
+      Editors' picks, best new products.
+    </p>
+
+  </div>
+
+  <!-- RIGHT: Heading and text -->
+  <div style="flex: 1; min-width: 0; text-align: center; margin-top: -20px;">
+    <h1 style="color: navy;">THIS IS A HEADING</h1>
+
+    <p class="font-paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Suspendisse feugiat
+      rhoncus ipsum,</strong> ac placerat leo interdum nec. Pellentesque sit amet pellentesque
+      magna. <em>Morbi varius bibendum dolor nec cursus. Morbi porttitor mauris ac ipsum
+      bibendum, in fringilla augue bibendum.</em> Mauris et mattis magna, eu mattis augue.
+      Sed consectetur volutpat lacinia. Cras porttitor, libero auctor tristique semper,
+      erat tellus venenatis odio, sed convallis nisi enim tempus risus.<strong><em>Aliquam finibus iaculis diam. Ut fringilla, tortor vitae viverra ornare, nunc felis varius ante, sit amet mollis quam turpis eu nulla.</em></strong>
+    </p>
+
+   <p>This is regular text.<sup>This is superscript text.</sup></p>
+   <p>This is regular text.This is <sub>subscripted</sub> text.</p>
+
+    <!-- HYPERLINK -->
+    <p style="text-align: left;">
+      <a href="https://www.gmu.edu" target="_blank" rel="noopener noreferrer">Visit George Mason University</a>
+    </p>
+
+  </div>
+
+</div>
+
+    <!-- THREE COLUMN HEADINGS -->
+    <div style="display: flex; gap: 20px; text-align: left;">
+
+      <div style="flex: 1;">
+        <h2 style="color: navy;">Heading Two</h2>
+        <p style="text-align: left;">
+        Sed ultrices nunc eu sapien pulvinar, lobortis ultricies quam condimentum.Integer ipsum risus, pellentesque sed enim a, iaculis ullamcorper justo. Praesent in euismod lectus. Integer dignissim nec mauris sed vulputate. In pellentesque leo ut risus imperdiet iaculis. Etiam quis lectus est.</p>
+      </div>
+
+      <div style="flex: 1;">
+        <h2 style="color: navy;">Heading Two</h2>
+        <p style="text-align: left;">
+        Fusce sollicitudin justo massa, eu placerat nulla gravida a. Quisque eu metus augue. Curabitur massa nunc, egestas a lacinia eu, auctor vel ligula. Nam eros velit, convallis ac elit vitae, tempus sollicitudin nunc. Curabitur et mi id augue consequat sollicitudin. Suspendisse a lacus libero. Nam finibus eu nisl vitae accumsan.</p>
+      </div>
+
+      <div style="flex: 1;">
+        <h2 style="color: navy;">Heading Three</h2>
+        <p style="text-align: left;">
+        Integer volutpat justo est, in vestibulum nisl luctus ut. Aenean mollis, risus sed scelerisque rutrum, nulla odio fringilla ante, vestibulum suscipit ante sem in nunc. Duis libero leo, commodo lacinia interdum vel, aliquet quis ante. Pellentesque ligula magna, maximus ut est vel, sollicitudin euismod lectus.</p>
+      </div>
+
+    </div>
+
+    <!-- FORM ELEMENTS ROW -->
+    <div style="display: flex; gap: 20px; align-items: flex-start; margin: 20px 0;">
+
+      <!-- LEFT: Select dropdown -->
+      <div style="flex: 1; text-align: left;">
+        <label style="color: navy; display: block; margin-bottom: 5px;">Choose an option:</label>
+        <select style="padding: 8px; border: 1px solid navy; border-radius: 4px;">
+          <option value="">-- Select --</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+
+      <!-- CENTER: Button -->
+      <div style="flex: 1; text-align: center;">
+        <label style="color: navy; display: block; margin-bottom: 5px;">Learn More:</label>
+        <button style="padding: 8px 20px; background-color: #1a2e4a; color: white; border: none; border-radius: 4px; cursor: pointer;">
+          CLICK
+        </button>
+      </div>
+
+      <!-- RIGHT: Checkbox form -->
+      <div style="flex: 1; text-align: left;">
+        <label style="color: navy; display: block; margin-bottom: 5px;">Select all that apply:</label>
+        <div style="display: inline-block; text-align: left;">
+          <label><input type="checkbox" value="check1"> Item One</label><br>
+          <label><input type="checkbox" value="check2"> Item Two Two</label><br>
+          <label><input type="checkbox" value="check3"> Item Three</label>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TABLE 1 - WITH SCOPE -->
+    <h2 style="color: navy; text-align: left;">TABLE 1 - WITH SCOPE</h2>
+    <table style="border: 2px solid navy; border-collapse: collapse; width: 400px;">
+      <tr>
+        <th style="border: 1px solid navy; padding: 8px;"></th>
+        <th scope="col" style="border: 1px solid navy; padding: 8px; text-align: left;">Month</th>
+        <th scope="col" style="border: 1px solid navy; padding: 8px; text-align: center;">Earned</th>
+        <th scope="col" style="border: 1px solid navy; padding: 8px; text-align: right;">Savings</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid navy; padding: 8px;">1</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: left;">January</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: center;">$100</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: right;">$100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid navy; padding: 8px;">2</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: left;">February</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: center;">$80</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: right;">$80</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid navy; padding: 8px;">3</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: left;">March</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: center;">$100</td>
+        <td style="border: 1px solid navy; padding: 8px; text-align: right;">$100</td>
+      </tr>
+    </table>
+
+    <!-- Unordered List -->
+    <h2 style="text-align: left;">Unordered List</h2>
+    <ul>
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2 style="text-align: left;">Ordered List</h2>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <!-- TABLE 2 - WITH COLOR -->
+    <h2 style="color: navy; text-align: left;">TABLE 2 — WITH COLOR</h2>
+    <div style="display: flex; justify-content: left;">
+      <table style="border: 2px solid navy; border-collapse: collapse; width: 400px;">
+        <tr>
+          <th style="border: 1px solid navy; padding: 8px; background-color: lightblue;"></th>
+          <th scope="col" style="border: 1px solid navy; padding: 8px; text-align: left; background-color: lightblue;">Month</th>
+          <th scope="col" style="border: 1px solid navy; padding: 8px; text-align: center; background-color: lightblue;">Earned</th>
+          <th scope="col" style="border: 1px solid navy; padding: 8px; text-align: right; background-color: lightblue;">Savings</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid navy; padding: 8px; background-color: lavender;">4</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: left;">April</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: center;">$100</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: right;">$100</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid navy; padding: 8px; background-color: lavender;">5</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: left;">May</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: center;">$100</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: right;">$100</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid navy; padding: 8px; background-color: lavender;">6</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: left;">June</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: center;">$200</td>
+          <td style="border: 1px solid navy; padding: 8px; text-align: right;">$200</td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MOD 3 WEB PAGE DESIGN. <a href="#">Contact Email:</a></p>
+    <a href="mailto:Saudet2@gmu.edu">Saudet2@gmu.edu</a>
+  </footer>
+
+</body>
+</html>
